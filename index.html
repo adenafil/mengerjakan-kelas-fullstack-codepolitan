@@ -13,14 +13,20 @@
 
     <h1>Hello, world!</h1>
 
-    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary">Primary Notifications
+        <span class="badge text-bg-danger">4</span>
+    </button>
     <button type="button" class="btn btn-warning text-white">Warning</button>
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
     <button type="button" class="btn btn-primary btn-lg">Large button</button>
     <button type="button" class="btn btn-secondary btn-sm">Small button</button>
     <button type="button" class="btn btn-outline-danger" disabled>CLose</button>
     <input class="btn btn-warning" type="reset" value="Reset">
-
+    <button type="button" class="btn btn-outline-info position-relative">Alert
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+            99+
+        <span class="visually-hidden">unread messages</span>        
+    </button>
 
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque soluta ratione sapiente, autem voluptatum a praesentium adipisci recusandae reprehenderit eum, quod repellat accusamus ut dolorum nostrum saepe accusantium minima.
@@ -49,7 +55,25 @@
         </figcaption>
       </figure>
 
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span class="visually-hidden" role="status">Loading...</span>
+      </button>
+
+      <div class="btn-group btn-group-sm">
+        <a href="#" class="btn btn-primary active" aria-current="page">Show</a>
+        <a href="#" class="btn btn-info">Edit</a>
+        <a href="#" class="btn btn-danger">Delete</a>
+      </div>      
+
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+      </button>
+      
+
     </div>
+    
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
